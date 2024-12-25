@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output/main.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="images/todo-icon-11.jpg" type="image/x-icon">
+  <title>To-do List</title>
+</head>
+<body>
+  <body class="flex items-center justify-center min-h-screen">
+    <!-- This is hero section -->
+    <div class="herosec w-full max-w-xl p-8">
+      <h1 class="text-4xl font-semibold text-center bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500  mb-4 text-[36px] md:text-4xl">To-do List</h1>
+      <p class="text-center text-[16px] md:text-[20px] text-gray-600 mb-6" id="status">0 Total, 0 Completed, 0 Pending</p>
+
+      <!-- This is input Section -->
+      <div class="flex items-center mb-4 ">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Add your tasks ..."
+          class="flex-1 p-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring focus:ring-pink-300 w-16 md:autofill:"
+        />
+        <button
+          id="addTaskBtn"
+          class="p-2 bg-teal-500 text-white rounded-r-lg hover:bg-teal-600"
+        >
+          ➕
+        </button>
+      </div>
+
+
+
+      <!-- This is table section -->
+      <table class="w-full  border-collapse border border-gray-300">
+        <thead>
+          <tr class="bg-gray-100">
+            <th class="border p-2 text-[10px] md:text-[18px]">Num</th>
+            <th class="border p-2 text-[10px] md:text-[18px]">Task</th>
+            <th class="border p-2 text-[10px] md:text-[18px]">Date</th>
+            <th class="border p-2 text-[10px] md:text-[18px]">Status</th>
+            <th class="border p-2 text-[10px] md:text-[18px]">Delete</th>
+          </tr>
+        </thead>
+        <tbody id="taskList"></tbody>
+      </table>
+    </div>
+
+
+
+    <!-- connect with JavaScript -->
+    <script src="JS_file/index.js"></script>
+</body>
+</html>
+
+
+
+                            <!-- End -->
